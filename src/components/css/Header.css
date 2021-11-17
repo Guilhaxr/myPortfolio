@@ -1,11 +1,12 @@
 .header{
     display:flex;
     justify-content: space-between;
-    background-color: mediumorchid;
+    background-color:  rgba( 60, 10, 85,1);
     font-size: 15px;
     color: aliceblue;
     height: 35px;
-
+    align-items: center;
+    height: 17px;
 
 }
 
@@ -24,7 +25,13 @@
 
 .topMenuRight{
     padding-right: 15px;
+    display:flex;
 }
 
+.date{
+    padding-left: 5px;
+}
 
-
+.hours{
+    padding-left: 10px;
+}

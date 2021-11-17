@@ -10,7 +10,8 @@ const Header = () =>{
     const [hours, setHours] = useState();
     const [minutes, setMinutes] = useState();
     
-    
+    const week = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
     useEffect(()=>{
         setInterval(()=>{
@@ -23,6 +24,7 @@ const Header = () =>{
         },1000)
 
     })
+    console.log(date)
     
 
     return(
@@ -55,8 +57,12 @@ const Header = () =>{
                 </div>
             </div>
                 
-            <dvi className="topMenuRight"> 
-                <p>{month}</p>
+            <dvi className="topMenuRight">  
+                <p className="date">{week[day]}</p>
+                <p className="date">{date}</p>
+                <p className="date">{months[month]}</p>
+                <p className="hours">{`${hours}:${minutes}`}</p>
+                
             </dvi>
         </div>
     )
