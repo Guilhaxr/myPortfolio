@@ -1,0 +1,30 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    background-color: mediumorchid;
+    font-size: 15px;
+    color: aliceblue;
+    height: 35px;
+
+
+}
+
+.headerStyle{
+    padding-right: 15px;
+    display: flex;
+}
+
+.topMenuIcon{
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: max-content;
+}
+
+
+.topMenuRight{
+    padding-right: 15px;
+}
+
+
+
