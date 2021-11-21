@@ -1,7 +1,7 @@
 .header{
     display:flex;
     justify-content: space-between;
-    background-color:  rgba( 60, 10, 85,1);
+    background-color:  rgba( 60, 10, 85, 0.6);
     font-size: 15px;
     color: aliceblue;
     height: 35px;

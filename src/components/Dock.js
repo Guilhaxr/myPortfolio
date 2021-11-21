@@ -1,25 +1,29 @@
 import "./css/Docks.css"
-const Dock = () =>{
 
-    return(
+
+const Dock = ({HandlerButton}) =>{
+
+    return (
         <div className="dock-container">
             <div className="dock">
                 <ul>
                     <li>
                         <span>Finder</span>
-                        <img src="../images/finderMe.png" alt="calendar" />
+                        <button  onClick= {HandlerButton}><img src="../images/finderMe.png" alt="maps" /></button>
                     </li>
                     <li>    
                         <span>Finder</span>
-                        <img src="../images/finderMe.png" alt="finderMe" />
+                        <button onClick=" hello"><img src="../images/finderMe.png" alt="maps" /></button>
+                    </li>
+                    <li>
+                        
+                        <span>Finder</span>
+                        <button onClick=" hello"><img src="../images/finderMe.png" alt="maps" /></button>
+                        {/* <img src="../images/finderMe.png" alt="maps" />  */}
                     </li>
                     <li>
                         <span>Finder</span>
-                        <img src="../images/finderMe.png" alt="maps" /> 
-                    </li>
-                    <li>
-                        <span>Finder</span>
-                        <img src="../images/finderMe.png" alt="calculator" />
+                        <button onClick=" hello"><img src="../images/finderMe.png" alt="maps" /></button>
                     </li>
                 </ul>
             </div>    
