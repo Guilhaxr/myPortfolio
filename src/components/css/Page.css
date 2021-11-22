@@ -1,14 +1,140 @@
-.page-container{
+.window-container{
     background: rgb(36, 36, 36);
     color: aliceblue;
     border-style: solid;
     border-width: 0.1px;
+    border-radius: 6px;
     border-color: rgba(255, 255, 255,0.4 );
     width: 650px;
     height: 500px;
+    
 }
 
-.pageInformation{
+.windowInformation{
     display:flex;
     justify-content: center;
 }
+
+.titleBar {
+    
+    color: #ffffff;
+    font-size: 11pt;
+    line-height: 20px;
+    text-align: center;
+    border-bottom-style: solid;
+    border-width: 0.1px;
+    border-color: rgba(255, 255, 255,0.4 );
+    height: 20px;
+  }
+
+  .buttons {
+    padding-left: 8px;
+    padding-top: 3px;
+    float: left;
+    line-height: 0px;
+  }
+  
+  .buttons:hover button {
+    visibility: visible;
+  }
+  
+/* redButton */
+
+  .close {
+    background: #ff5c5c;
+    font-size: 9pt;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #e33e41;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 7px;
+  }
+  
+  .close:active {
+    background: #c14645;
+    border: 1px solid #b03537;
+  }
+  
+  .close:active .closeButton {
+    color: #4e0002;
+  }
+  
+  .closeButton {
+    color: #820005;
+    visibility: hidden;
+    cursor: default;
+    font-size: smaller;
+    background-color: transparent;
+    border: none;
+    padding:0;
+    
+  }
+
+/* yellowButton */
+
+
+  .minimize {
+    background: #ffbd4c;
+    font-size: 9pt;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #e09e3e;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 7px;
+  }
+  
+  .minimize:active {
+    background: #c08e38;
+    border: 1px solid #af7c33;
+  }
+  
+  .minimize:active .minimizeButton {
+    color: #5a2607;
+  }
+  
+  .minimizeButton {
+    color: #9a5518;
+    visibility: hidden;
+    cursor: default;
+    font-size: smaller;
+    background-color: transparent;
+    border: none;
+    padding:0;
+    
+  }
+
+
+/* greenButton */
+
+.zoom {
+    background: #00ca56;
+    font-size: 9pt;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #14ae46;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 7px;
+  }
+  
+  .zoom:active {
+    background: #029740;
+    border: 1px solid #af7c33;
+  }
+  
+  .zoom:active .zoomButton {
+    color: #003107;
+  }
+  
+  .zoomButton {
+    color: #006519;
+    visibility: hidden;
+    cursor: default;
+    font-size: smaller;
+    background-color: transparent;
+    border: none;
+    padding:0;
+    
+  }

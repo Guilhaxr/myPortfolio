@@ -1,5 +1,6 @@
 import "./css/Header.css"
 import { useEffect, useState } from "react";
+import { DiApple } from "react-icons/di"
 
 
 const Header = () =>{
@@ -32,8 +33,7 @@ const Header = () =>{
             
             
             <div className="headerStyle">
-            <img className="topMenuIcon" src="../images/apple-white.png " alt="apple"/>
-            
+               <p className="appleIcon"> <DiApple /> </p>
                 <div className="headerStyle">
                     <p>Finder</p>
                 </div>

@@ -6,6 +6,7 @@ import Dock from "./components/Dock"
 import About from "./components/About"
 
 
+
 function App() {
   const [openFolder, setOpenFolder] = useState(false)
   const [imagePos, setImagePos] = useState({x: 0, y: 0});
