@@ -1,9 +1,7 @@
-import "./css/Page.css"
-import { IoIosCloseCircleOutline } from "react-icons/io";
-import { IconContext } from "react-icons";
+import "./css/Window.css"
 
 
-const About = () => {
+const About = ({HandlerButton}) => {
 
 
     return(
@@ -12,13 +10,13 @@ const About = () => {
         <div className="titleBar">
             <div className="buttons">
                 <div className="close">
-                    <button className="closeButton"><strong>x</strong></button>
+                    <button onClick={HandlerButton} className="closeButton"><strong>x</strong></button>
                 </div>
                 <div className="minimize">
-                    <button className="minimizeButton"><strong>&ndash;</strong></button>
+                    <button onClick={HandlerButton}  className="minimizeButton"><strong>&ndash;</strong></button>
                 </div>
                 <div className="zoom">
-                    <button className="zoomButton"><strong>+</strong></button>
+                    <button  className="zoomButton"><strong>+</strong></button>
                 </div>
             </div>
         </div>

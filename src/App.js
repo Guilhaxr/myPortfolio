@@ -24,16 +24,16 @@ function App() {
 
   return (
     <div className="backGround">
-      
       <Header />
-      <div {...bindImagePos()} style={{
-        position:"relative",
-        top: imagePos.y,
-        left: imagePos.x,
-      }}>
-        {openFolder && <About />}
+      <div className="windows">
+        <div {...bindImagePos()} style={{
+          position:"relative",
+          top: imagePos.y,
+          left: imagePos.x,
+        }}>
+          {openFolder && <About HandlerButton={HandlerButton}/>}
+        </div>
       </div>
-      
       <Dock HandlerButton={HandlerButton}/>
     </div>
   );

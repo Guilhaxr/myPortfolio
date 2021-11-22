@@ -2,8 +2,17 @@ body{
     background-image: url(./components/css/bacKGround.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100%;
     background-position: center;
     background-size: cover;
     margin: 0px;
+    min-height: 100%
+}
+
+.windows{
+    height: 100vh;
+    margin:0;
+    padding:0;
+    width: 100vw;
+    top: 0;
+    left: 0;
 }
