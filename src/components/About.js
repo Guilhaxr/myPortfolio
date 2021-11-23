@@ -1,12 +1,30 @@
 import "./css/Window.css"
+import { useState } from "react"
 
 
 const About = ({HandlerButton}) => {
+    const [zoom, setZoom] = useState(false)
 
+
+
+    const smallZoom = {
+        height: "50vh",
+        
+    }
+
+    const maxZoom = {
+        height: "500px",
+        
+        
+    }
+
+    const handlerZoom = () =>{
+        setZoom(!zoom);
+    }
 
     return(
         
-    <div className="window-container">
+    <div className="window-container" style={zoom ? maxZoom : smallZoom} >
         <div className="titleBar">
             <div className="buttons">
                 <div className="close">
@@ -16,7 +34,7 @@ const About = ({HandlerButton}) => {
                     <button onClick={HandlerButton}  className="minimizeButton"><strong>&ndash;</strong></button>
                 </div>
                 <div className="zoom">
-                    <button  className="zoomButton"><strong>+</strong></button>
+                    <button  onClick={handlerZoom} className="zoomButton"><strong>+</strong></button>
                 </div>
             </div>
         </div>

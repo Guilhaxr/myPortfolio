@@ -5,14 +5,16 @@ body{
     background-position: center;
     background-size: cover;
     margin: 0px;
-    min-height: 100%
+    max-width: 100vw;
+    
+    
 }
 
 .windows{
-    height: 100vh;
+    height: 86vh;
     margin:0;
     padding:0;
-    width: 100vw;
+    max-width: 100vw;
     top: 0;
     left: 0;
 }
