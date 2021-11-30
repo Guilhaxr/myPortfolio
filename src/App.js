@@ -34,7 +34,7 @@ function App() {
         }}>
           {openFolder && <About HandlerButton={HandlerButton}/>}
         </div>
-      
+        
       <Dock HandlerButton={HandlerButton}/>
     </div>
   );

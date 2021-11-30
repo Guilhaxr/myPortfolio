@@ -9,13 +9,14 @@ const About = ({HandlerButton}) => {
 
     const smallZoom = {
         height: "50vh",
-        
     }
 
     const maxZoom = {
-        height: "500px",
-        
-        
+        height: "86vh",
+        width: "100vw",
+        position: "absolute",
+        top: "0px",
+        left: "0px"
     }
 
     const handlerZoom = () =>{
