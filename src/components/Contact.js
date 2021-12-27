@@ -25,7 +25,7 @@ const Contact = ({HandlerButton}) => {
 
     return(
         
-    <div className="window-container" style={zoom ? maxZoom : smallZoom} >
+    <div  className="window-container" style={zoom ? maxZoom : smallZoom} >
         <div className="titleBar">
             <div className="buttons">
                 <div className="close">
