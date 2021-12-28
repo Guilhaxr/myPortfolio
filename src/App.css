@@ -4,11 +4,10 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-
         margin: 0;
-        width: 100vw;
-        height: 100vh;
-        position: static;
+       
+        height: 100%;
+   
     
 }
 
