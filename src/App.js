@@ -11,16 +11,17 @@ import Contact from "./components/Contact"
 function App() {
   const [openAbout, setOpenAbout] = useState(false)
   const [openWindow, setOpenWindow] = useState(false)
-  const [ OverLapAbout, setOverLapAbout] = useState(false)
-  const [ OverLapWindow, setOverLapWindow] = useState(false)
+
+  const [about, setAbout] = useState(false)
+  // const [windoow, setWindow] = useState(false)
+
+  const [ counterAbout, setCounterAbout] = useState(0)
+  const [ counter2, setCounter2] = useState(0)
+
 
   const [imagePos, setImagePos] = useState({x: 0, y: 0});
   const [aboutPos, setAboutPos] = useState({x: 0, y: 0});
-  // const [overlap, setOverlap] = useState({zIndex:0})
-
-// const HandlerOverlap = () => {
-//   setOverlap({zIndex:1})
-// }
+ 
   const bindImagePos = useDrag(({ down, offset: [ox, oy]}) => setImagePos({ x: ox, y: oy, immediate: down }), {
     bounds: {top: 0 , left:-Infinity, right:Infinity
     } })
@@ -29,21 +30,42 @@ function App() {
       bounds: {top: 0 , left:-Infinity, right:Infinity
       } })
 
-      const HandlerOverlapAbout = () => {
-        setOverLapAbout(OverLapAbout ? 0 : 1 )
-      }
-      const HandlerOverlapWindow = () => {
-        setOverLapWindow(OverLapWindow ? 0 : 1)
+ 
+      let incrementAbout = () => {
+        setCounterAbout((counterAbout + counter2)  + 2 )
       }
 
-  const HandlerAbout = () => {
-    setOpenAbout(!openAbout)
-    
-}
+      let incrementWindow = () => {
+        setCounter2((counterAbout + counter2)  + 2 )
+      }
 
-const HandlerWindow = () => {
-  setOpenWindow(!openWindow)
-}
+
+
+      // let incrementAbout = () => {
+      //   setCounterAbout(!counterAbout.switch)
+      //    setCounterAbout(counterAbout + 2 )  
+      // }
+
+      // let incrementWindow = () => {
+      //   setCounterWindow(counterWindow + 2 )
+      // }
+  
+        // const HandlerAboutss = () =>{
+        //   setAbout(!about)
+        // }
+
+        // const HandlerWindowss = () =>{
+        //   setWindow(!windoow)
+        // }
+
+    const HandlerAbout = () => {
+      setOpenAbout(!openAbout)
+      
+  }
+
+  const HandlerWindow = () => {
+    setOpenWindow(!openWindow)
+  }
 
 
 
@@ -54,12 +76,12 @@ const HandlerWindow = () => {
       <Header />
 
 
-       <div onClick={HandlerOverlapAbout} {...bindAboutPos()}  style={{
+       <div  onClick={incrementAbout}  {...bindAboutPos()}  style={{
           width: "fit-content",
           position:"absolute",
           top: aboutPos.y,
           left: aboutPos.x,
-          zIndex: OverLapAbout 
+          zIndex: counterAbout 
           
         }}>
           { openAbout && <About HandlerButton={HandlerAbout}  />  }
@@ -69,12 +91,12 @@ const HandlerWindow = () => {
 
 
 
-        <div onClick={HandlerOverlapWindow} {...bindImagePos()} style={{
+        <div onClick={incrementWindow}  {...bindImagePos()} style={{
           width: "fit-content",
           position:"absolute",
           top: imagePos.y,
           left: imagePos.x,
-          zIndex: OverLapWindow
+          zIndex: counter2
 
         }}
         >
