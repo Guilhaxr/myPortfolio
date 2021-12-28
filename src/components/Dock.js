@@ -4,7 +4,7 @@ import "./css/Docks.css"
 const Dock = ({HandlerWindow, HandlerAbout}) =>{
 
     return (
-        <div className="dock-container">
+        <footer className="dock-container">
             <div className="dock">
                 <ul>
                     <li>
@@ -27,7 +27,7 @@ const Dock = ({HandlerWindow, HandlerAbout}) =>{
                     </li>
                 </ul>
             </div>    
-        </div>
+        </footer>
     )
 
 }

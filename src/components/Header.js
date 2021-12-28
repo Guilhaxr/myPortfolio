@@ -29,7 +29,7 @@ const Header = () =>{
     
 
     return(
-        <div className="header">
+        <header className="header">
             
             
             <div className="headerStyle">
@@ -57,14 +57,14 @@ const Header = () =>{
                 </div>
             </div>
                 
-            <dvi className="topMenuRight">  
+            <div className="topMenuRight">  
                 <p className="date">{week[day]}</p>
                 <p className="date">{date}</p>
                 <p className="date">{months[month]}</p>
                 <p className="hours">{`${hours}:${minutes}`}</p>
                 
-            </dvi>
-        </div>
+            </div>
+        </header>
     )
 }
 
